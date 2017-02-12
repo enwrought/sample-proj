@@ -1,0 +1,13 @@
+{
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "emcaFeatures": {}
+  },
+  "rules": {
+    "semi": 2
+  }
+}
