@@ -7,7 +7,8 @@
     "clean": "rm -r build && mkdir build",
     "build": "npm run clean && babel -d build app -s",
     "start": "npm run build && node build/index.js",
-    "test": "mocha --compilers js:babel-core/register --require babel-polyfill --reporter spec"
+    "test": "mocha --compilers js:babel-core/register --require babel-polyfill --reporter spec",
+    "debugVSC": "babel-node --debug --presets es2015 -- app/index.js --debug"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "chai": "^3.5.0",
     "eslint": "^3.14.1",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
   }
 }
